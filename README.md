@@ -1,4 +1,4 @@
-# Docker setup for single laravel development environtment
+# A Lightweigth minimal much better docker container setup for running laravel development environment locally on your PC/Dekstop Machine
 
 A minimal much better docker setuo for local development php that useful to run laravel app without any dependecy (Build Natively Docker From Docker Image Setup)
 
@@ -53,8 +53,18 @@ docker_compose build && docker-compose up -d
 
 ### Usage step-by-step for fresh laravel install
 
+First make sure youre create a ```src``` folder
+```
+mkdir ./src
+```
+after it, then create a fresh laravel project inside the ```src``` directory using composer service that already running in the docker container
+
+```
+docker-compose run --rm composer create-project laravel/laravel ./src
+```
+
 ````
-todo documented
+
 ````
 ### Usage step-by-step for cloned existing repository
 ````
